@@ -13,4 +13,3 @@ A simple Rock Paper Scissors game built using HTML, CSS and JavaScript
 - HTML
 - CSS
 - JavaScript
->>>>>>> e28847b72888d92bb133bfb34b9cb39cc0d82c9d
