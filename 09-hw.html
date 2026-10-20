@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excerises</title>
+</head>
+<body>
+  <button>9a</button>
+  <button class="btn-2">9b</button><br><br>
+
+  <p>Excerise 2</p>
+  <button class="head">Head</button>
+  <button class="tail">tail</button>
+  <p class="result"></p>
+
+  <p>Excersise 3</p>
+  <input class="name" placeholder="Enter your name">
+  <button class="submit">Submit</button>
+  <p class="res"></p>
+
+
+  <script>
+    console.log(document.querySelector('button'));
+    const button2 = document.querySelector('.btn-2').innerText = 'done';
+
+    const headbtn = document.querySelector('.head');
+    const tailbtn = document.querySelector('.tail');
+    const result = document.querySelector('.result');
+
+    headbtn.addEventListener('click',function(){
+      result.innerText = 'You chooosed: head';
+    });
+    tailbtn.addEventListener('click',function(){
+      result.innerText = 'You choosed: tail';
+    });
+
+   const input = document.querySelector('.name');
+   const submitbutton = document.querySelector('.submit');
+   const res = document.querySelector('.res');
+   submitbutton.addEventListener('click',function(){
+    const text = input.value;
+    res.innerText = `Your name is: ${text}`;
+   });
+
+   input.addEventListener('keydown',function(){
+    if(event.key === 'Enter'){
+      const text = input.value;
+      res.innerText = `Your name is: ${text}`;
+    }
+   });
+
+
+  </script>
+</body>
+</html>
